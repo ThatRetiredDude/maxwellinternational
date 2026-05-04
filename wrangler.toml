@@ -1,0 +1,5 @@
+# Cloudflare Pages — optional CLI deploy: npm run pages:deploy
+# Dashboard alternative: connect this Git repo; build command npm run build; output dist
+name = "maxwellinternational"
+pages_build_output_dir = "dist"
+compatibility_date = "2025-05-05"

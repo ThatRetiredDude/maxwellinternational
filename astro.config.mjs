@@ -3,10 +3,10 @@ import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
-// GitHub Pages project URL uses /repository-name/. After you add a custom domain in
-// repo Pages settings, set base to '/' and site to your domain.
+// Cloudflare Pages serves from /. Replace `site` with your *.pages.dev URL or custom domain
+// (Dashboard → Workers & Pages → your project → Domains).
 export default defineConfig({
-	site: "https://thatretireddude.github.io",
-	base: "/maxwellinternational/",
+	site: "https://maxwellinternational.pages.dev",
+	base: "/",
 	integrations: [mdx(), sitemap()],
 });
