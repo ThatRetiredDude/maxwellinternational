@@ -9,7 +9,8 @@
 		"check": "astro check && astro build",
 		"dev": "astro dev",
 		"preview": "astro preview",
-		"pages:deploy": "astro build && wrangler pages deploy dist"
+		"pages:deploy": "astro build && wrangler pages deploy dist --project-name=maxwellinternational",
+		"pages:deploy:env": "astro build && wrangler pages deploy dist --project-name=maxwellinternational --env-file .env"
 	},
 	"devDependencies": {
 		"wrangler": "^4.51.0"
