@@ -3,15 +3,10 @@ import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
-import cloudflare from "@astrojs/cloudflare";
-
-// https://astro.build/config
+// GitHub Pages project URL uses /repository-name/. After you add a custom domain in
+// repo Pages settings, set base to '/' and site to your domain.
 export default defineConfig({
-	site: "https://example.com",
+	site: "https://thatretireddude.github.io",
+	base: "/maxwellinternational/",
 	integrations: [mdx(), sitemap()],
-	adapter: cloudflare({
-		platformProxy: {
-			enabled: true,
-		},
-	}),
 });
